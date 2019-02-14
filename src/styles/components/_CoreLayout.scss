@@ -1,0 +1,78 @@
+.CoreLayout {
+    @include full-space;
+    @include display(flex);
+    @include flex-direction(column);
+
+    @include linear-gradient(
+        -20deg,
+        #3a6073 0%,
+        #16222a 100%
+    );
+
+    &--mainTitle {
+      text-align: left;
+      font-size: 1.5em;
+      font-weight: 600;
+      line-height: 0;
+      padding-left: 1em;
+      margin:0;
+      text-transform: capitalize;
+    }
+
+    &--box {
+        border: 20px solid $color-yellow;
+        width: 85vw;
+        height: 200px;
+        position: relative;
+        top: 0.5em;
+        left: -1.2em;
+        padding-left: 1em;
+    }
+
+    // &--info {
+    //     display: grid;
+    //     grid-template: repeat(3, 10% 80% 10%) / 15% 70% 15%;
+    //
+    //     // & div:nth-child(1) div:nth-child(2) div:nth-child(1) {
+    //     //     grid-area: 1 / 2 / 3 / 2;
+    //     // }
+    //
+    // }
+
+    &--viewport {
+        @include flex(1);
+
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        will-change: transform;
+    }
+
+    &--background {
+        position: relative;
+        margin: 0 60px 60px 30px;
+        // padding: 30px;
+
+        background-color: $color-white;
+        box-shadow: 0 25px 25px 0 rgba($color-black, .15);
+
+        // colored background
+        &::before {
+            z-index: -1;
+
+            content: '';
+
+            position: absolute;
+            top: 25px;
+            right: -25px;
+            width: 100%;
+            height: 100%;
+
+            @include linear-gradient(
+                -35deg,
+                #fac5b3 0%,
+                #faf5a3 100%
+            );
+        }
+    }
+}

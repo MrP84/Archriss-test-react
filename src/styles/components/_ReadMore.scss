@@ -1,0 +1,86 @@
+.readMore {
+  text-transform: uppercase;
+
+  // &--box-image {
+  //   height: 100%;
+  //   width: 50vw;
+  // }
+
+  &--box-info {
+    display: grid;
+    grid-template: 20% 60% 20% / 5% 30% 30% 30% 5%;
+    position: relative;
+    top: -9em;
+    left: 4em;
+
+  }
+
+  &--box-image {
+
+    &-cinema, &-concert {
+      grid-area: 1 / 2 / 4 / 3;
+      box-shadow: 0 1.5em 1.5em rgba(94, 93, 93, 0.4);
+
+      & img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &-exposition {
+      grid-area: 1 / 4 / 4 / 4;
+      box-shadow: 0 1.5em 1.5em rgba(94, 93, 93, 0.4);
+
+      & img {
+        height: 100%;
+        width: 100%;
+      }
+
+    }
+
+
+
+  }
+
+  &--box-complement {
+
+    &-cinema, &-concert {
+      grid-area: 2 / 3 / 3 / 5;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      box-shadow: 0 1.5em 1.5em rgba(94, 93, 93, 0.4);
+      padding: 2em;
+      background-color: $color-gray-ultralight;
+      min-height: 100%;
+
+
+
+      & p:nth-child(2) {
+        font-size: 1.2em;
+        font-weight: 600;
+      }
+
+    }
+
+    &-exposition {
+      grid-area: 2 / 2 / 3 / 4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      box-shadow: 0 1.5em 1.5em rgba(94, 93, 93, 0.4);
+      padding: 2em;
+      background-color: $color-gray-ultralight;
+      min-height: 100%;
+
+      & p:nth-child(2) {
+        font-size: 1.2em;
+        font-weight: 600;
+      }
+    }
+
+
+  }
+}

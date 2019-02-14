@@ -1,0 +1,9 @@
+@mixin font-regular {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+@mixin font-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}

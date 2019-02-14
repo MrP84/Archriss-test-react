@@ -1,0 +1,40 @@
+.Header {
+    @include display(flex);
+    @include align-items(center);
+    height: $header-height;
+
+    &--btn-close {
+        cursor: pointer;
+
+        @include display(flex);
+        @include align-items(center);
+        @include justify-content(center);
+        width: $header-height;
+        height: $header-height;
+
+        @include transition(background-color .3s ease);
+
+        &:hover {
+            background-color: rgba($color-yellow, .55);
+        }
+
+        &::before {
+            color: rgba($color-white, .5);
+            @include font-size-fixed(22px);
+        }
+    }
+
+    &--title {
+        margin-left: 12px;
+
+        color: $color-white;
+        @include font-title;
+        @include font-size-fixed(12px);
+        letter-spacing: .075em;
+        text-transform: uppercase;
+    }
+
+    &--buttons {
+      float: right;
+    }
+}

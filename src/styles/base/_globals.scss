@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+
+    &::after,
+    &::before {
+        box-sizing: border-box;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+html {
+    font-size: 16px; // let's use rem units
+}
+
+body {
+    @include font-regular;
+    color: $color-black;
+    line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 .5em;
+    line-height: $heading-line-height;
+    @include font-title;
+}
+
+p {
+    margin: 0 0 .25em;
+    line-height: $base-line-height;
+    @include font-size(16px);
+}
+
+
+// Remove the gap between audio, canvas, iframes, images, videos and the bottom of their containers
+// https://github.com/h5bp/html5-boilerplate/issues/440
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+// Set max-width for these elements
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+picture {
+    max-width: 100%;
+}
+
+
+// Preserve ratio of images and pictures
+img,
+picture {
+    margin: 0;
+    height: auto;
+}
+
+
+// Remove default fieldset styles.
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+// Allow only vertical resizing of textareas.
+textarea {
+    resize: vertical;
+}
+
+
+// Avoid lists' default styling
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

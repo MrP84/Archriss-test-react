@@ -1,0 +1,42 @@
+// Fill up the entire space of the parent container
+@mixin full-space($position: absolute, $overflow: hidden, $dimensions: false) {
+    @if $position != null {
+        position: $position;
+    }
+
+    top: 0;
+    left: 0;
+
+    @if $dimensions == true {
+        height: 100%;
+        width: 100%;
+    }
+    @else {
+        right: 0;
+        bottom: 0;
+    }
+
+    @if $overflow != null {
+        overflow: $overflow;
+    }
+}
+
+
+// Dynamic font size
+@mixin font-size($size, $use-rem: true, $important: false) {
+    $flag: '';
+
+    @if $important == true {
+        $flag: '!important'
+    }
+
+    font-size: $size #{$flag}; // fallback
+
+    @if ($use-rem != false) {
+        font-size: rem($size) #{$flag};
+    }
+}
+
+@mixin font-size-fixed($size, $important: false) {
+    @include font-size($size, false, $important);
+}

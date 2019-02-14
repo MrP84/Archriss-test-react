@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Archriss-test-react
 
-## Available Scripts
+Et voilà ! Je ne suis pas 100% satisfait de la prestation que je viens d'offrir dans la mesure où je ne suis encore que débutant en React mais je dois avouer que ces 2 semaines sont passées extrêmement vites!
 
-In the project directory, you can run:
+### Les components
 
-### `npm start`
+Aux components existants tels que Header, CoreLayout et ArchrissMessage j'ai ajouté un component `Contact` et un `ReadMore` respectivement pour les parties "contacts" et "à lire aussi".
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Les styles
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+L'apprentissage de SASS s'est effectivement bien passé, je dois reconnaître que cette façon de coder les styles est impressionnante. Toutefois, on ne change pas ses habitudes du jour au lendemain et je suis parfois retombé dans mes anciens travers à savoir "bricoler" pour obtenir un rendu satisfaisant...
 
-### `npm test`
+### Les fonctionnalités optionnelles
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Voilà ma plus grande déception : ne pas avoir réussi à mettre en oeuvre la fonction de swipe... Je n'ai pas effacé ma tentative mais force est de constater qu'elle est infructueuse... J'ai eu quelques idées mais je voulais avant tout finir la mise en forme complète de la page.
 
-### `npm run build`
+### Responsive
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+J'ai fait le choix de coder le "site" en vue mobile. Mon habitude est d'utiliser des medias query pour gérer les différentes vues, hors là... je ne l'ai pas fait. Les photos sont moches en grand écran et une des 6 de la partie "photo" ne respecte pas la mise en forme des autres!
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+J'ai usé (et peut être abusé) de flexbox mais pas seulement : la disposition permise par `display: grid` offre à mon sens une plus grande liberté.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Commentaires
 
-### `npm run eject`
+Je n'ai mis aucun commentaire! En fait, si, j'avais commencé à en mettre dès mes premières lignes de code mais à force d'effacer, de modifier, de déplacer, je les ai retirés. Là où j'ai été vraiment bête, c'est de ne pas avoir utilisé Git dès le début. Non pas que ça m'aurait été d'une grande aide mais vous auriez pu voir les différentes étapes par lesquelles je suis passé.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Cela dit, je peux en parler mais je reconnais que c'est dommage.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Pour conclure
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+J'ai essayé de montrer mon niveau en React (niveau de débutant je le rappelle puisque je n'en avais jamais fait auparavant). J'ai suivi une formation vidéo sur `udemy` et je me suis lancé.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+J'ai voulu montrer que je savais manipuler les states, notamment pour la partie `A lire aussi` où je crée un objet sur lequel je boucle pour le rendu puisque les 3 articles me faisaient penser à une collection.
 
-## Learn More
+J'ai également mis une grande collection de conditions dans ArchrissMessage pour la visibilité des différents éléments dans des components identiques. Afin de différencier les div, j'ai aussi utilisé la concaténation ES6 (bien pratique pour SASS!).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Enfin, je ne peux que conseiller de regarder le site en vue mobile dans la mesure où c'est comme ça que je l'ai codé. `display: flex` et `display:grid` font globalement bien les choses quand on change la taille de la vue mais ça n'est pas parfait, par manque de temps (à noter que ce manque de temps est directement induit par les choix que j'ai fait quant à la volonté de coder tout le site en y insérant toutes sortes de r-gles apprises la semaine précédente).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Bref, **merci!**
